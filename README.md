@@ -2,6 +2,8 @@
 
 Presentations by Chrille, powered by [reveal-md](https://github.com/webpro/reveal-md).
 
+**Live:** https://lizell.github.io/chrillo-reveals/
+
 ## Setup
 
 ```bash
