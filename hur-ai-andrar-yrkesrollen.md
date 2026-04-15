@@ -1,0 +1,302 @@
+# Hur AI ändrar yrkesrollen
+## (på riktigt)
+
+Christian Lizell (Athega @ SVT Nyheter & Sport)  
+Öppet hus · Chas Academy · 20–25 min
+
+Note:
+Syfte: nyansera bilden. Visa vad som faktiskt förändrats i vardagen.
+Jag använder Ossy som ett konkret exempel, men fokus är arbetssättet och vad som blir viktigare i rollen.
+
+---
+
+# Vad detta handlar om
+## (och inte)
+
+--
+
+## Detta handlar om
+- Praktiska förändringar i hur vi bygger mjukvara idag
+- Ett konkret case: Ossy (SVT)
+- Vad vi tittar efter vid rekrytering 2026
+
+--
+
+## Det är inte
+- En AI-demo eller verktygsreklam
+- Ett "AI tar jobben"-snack
+- En teknisk deep dive i modeller
+
+Note:
+Sätt förväntningar. Jag pratar om arbetsmetod, kvalitet, risk och ansvar.
+
+---
+
+## Upplägg (20–25 min)
+
+1) Vad som faktiskt förändrats (5 min)  
+2) Case: Ossy och hur vi jobbar (12–15 min)  
+3) Rekryteringsperspektiv 2026 (3–5 min)
+
+Note:
+Håll tempot. Om tiden blir tight: korta case-delen men behåll rekryteringsdelen.
+
+---
+
+# Vad som faktiskt förändrats i yrkesrollen
+## Del 1
+
+Note:
+Övergång: från abstrakt AI-prat till konkreta förändringar i vardagen.
+
+--
+
+## Förändring 1: Implementation blev "billig"
+
+- Det kostar lite att prova en idé
+- Det är normalt att kasta och börja om
+- Omskrivningar/refaktoreringar blir rationella, inte dramatiska
+
+Note:
+Förr: mycket "sunk cost" och försiktighet.
+Nu: snabbare lärloopar. Målet är inte fart för fartens skull, utan att hitta rätt lösning snabbare.
+
+--
+
+## Förändring 2: Kvalitetsarbete flyttade framåt
+
+- Mer tid på intention, avgränsningar, edge cases
+- Mindre "hero debugging" i slutet
+- Kvalitet byggs som ett system, inte ett granskningssteg
+
+Note:
+AI kan producera output snabbt. Värdet ligger i att definiera "rätt", "säkert" och "klart".
+Därför blir krav, teststrategi och riskhantering viktigare.
+
+--
+
+## Förändring 3: Omdöme blev mer värdefullt
+
+- Kan du bedöma output du inte skrivit?
+- Kan du resonera om risk, säkerhet och konsekvenser?
+- Kan du förklara varför något är korrekt?
+
+Note:
+AI tar inte bort ansvar. Den koncentrerar ansvar i omdöme och verifiering.
+Därför blir grundläggande systemförståelse ännu viktigare.
+
+--
+
+### Varför du fortfarande behöver kunna koda
+
+- Du kan inte bedöma det du inte förstår
+- Systemförståelse är grunden för omdöme
+- Utan den vet du inte när AI har fel — eller varför
+- "Koda" handlar mindre om att skriva, mer om att tänka i system
+
+Note:
+Poängen: AI gör att du skriver mindre kod, inte att du behöver förstå mindre.
+Den som förstår arkitektur, beroenden och felhantering kan styra AI.
+Den som inte gör det blir beroende av att AI alltid har rätt — och det har den inte.
+
+---
+
+# Case: Ossy
+## (SVT Nyheter & Sport)
+## Del 2
+
+![Ossy](assets/images/ossy.png) <!-- .element: style="height: 300px; border: none; box-shadow: none; background: transparent;" -->
+
+Note:
+Nu gör vi det konkret: hur jobbar man i ett AI-first-projekt i produktion?
+
+--
+
+## Vad är Ossy?
+
+- SVT:s första publika AI-tjänst: en chatbot i SVT-kontext
+- Användes flitigt och framgångsrikt under OS
+- Plus: ett ramverk för att snabbt skapa nya expertbotar
+
+Note:
+Max 30 sek. Inga features.
+Poängen: produkt + återanvändbar kapacitet.
+
+--
+
+## Teamet (och varför det är intressant)
+
+- 3 utvecklare + 1 redaktionell person
+- Ingen dedikerad UX, testare, AD eller DevOps
+- Väldigt litet team, ändå production-grade
+- Vi löste det inte med fler roller — utan med en annan arbetsmetod
+
+Note:
+Grundförutsättningen: teamet är litet med flit, inte av brist.
+Arbetsmetoden är det som gör det möjligt.
+
+--
+
+## Vår standard-loop
+
+<div class="fragment semi-fade-out" data-fragment-index="1">
+
+Idé → Promptjam → Generera → Verifiera → Test → PR → Release
+
+</div>
+
+<div class="fragment" data-fragment-index="1">
+
+<span style="color: #a78bfa">🧑🤖 Idé</span> → <span style="color: #a78bfa">🧑🤖 Promptjam</span> → <span style="color: #f59e0b">🤖 Generera</span> → <span style="color: #a78bfa">🧑🤖 Verifiera</span> → <span style="color: #a78bfa">🧑🤖 Test</span> → <span style="color: #a78bfa">🧑🤖 PR</span> → <span style="color: #6ea8fe">🧑 Release</span>
+
+<small>🧑 = människa &nbsp; 🤖 = AI-agent &nbsp; 🧑🤖 = tillsammans</small>
+
+</div>
+
+Note:
+Promptjam = vi formar beställningen tillsammans:
+mål, avgränsningar, risker, acceptanskriterier.
+Vi synkar ofta, ibland sitter vi i samma möte och jobbar parallellt.
+
+--
+
+## Radikalt (?): ingen kod skrivs för hand
+
+- All kod genereras av AI (t.ex. Claude/Codex)
+- Även "akutfixar" går ofta snabbare och med färre misstag via AI
+- Människor styr intention och bedömer risk
+
+Note:
+Motintuitivt: "jag fixar bara snabbt" är en klassisk källa till slarv och regressioner.
+AI kan ge mer konsekvent output om kontext + tester finns i loopen.
+
+--
+
+## Varför det går fort utan att bli vårdslöst
+
+- Implementering + test är billigt
+- Lätt att prova, kasta, prova igen
+- "Klart" = good enough for now → release → iterera
+
+Note:
+Vi har skrivit om större delar flera gånger.
+Det är inte slöseri när kostnaden för iteration är låg och lärandet är högt.
+
+--
+
+## När det blir svårt
+
+<table>
+<tr><th>Problem</th><th class="fragment" data-fragment-index="1">Motdrag</th></tr>
+<tr><td>AI kan missförstå kontext</td><td class="fragment" data-fragment-index="1">Tydligare kontext + krav + källor</td></tr>
+<tr><td>AI kan utgå från gammal dokumentation</td><td class="fragment" data-fragment-index="2">Peka den till rätt kunskap och dokumentation</td></tr>
+<tr><td>Man kan hamna i frustrerande fel-loopar</td><td class="fragment" data-fragment-index="3">Byt modell/verktyg när det inte passar</td></tr>
+</table>
+
+Note:
+Det här är en yrkesskicklighet — att veta när man ska byta approach.
+
+--
+
+## Test av chatbot: du kan inte testa exakta strängar
+
+Vi använder:
+- enhetstester
+- integrationstester
+- en LLM-judge som bedömer "rimlighet" i svaren
+
+Note:
+Chatbotar är inte deterministiska UI-texter.
+Därför testar vi scenarion och acceptans.
+Det blir inte 100% hallucinationsfritt, men vi bygger system för att upptäcka och begränsa fel.
+
+--
+
+## Säkerhet och förtroende (icke-förhandlingsbart)
+
+- flera lager av guardrails
+- modeller/verktyg reviewar varandra
+- manuell koll där det behövs
+
+Note:
+Guardrails skyddar både boten och användaren.
+Exempel på vardagsfriktion: ibland blockar den fel (t.ex. "visa klipp på Elvira" kan feltolkas).
+Det kräver finjustering, inte bara "släppa fri".
+
+--
+
+## Drift och kostnadskontroll
+
+- övervakning (dashboards/alerts)
+- cost dashboards och trösklar
+- vi byter modell/leverantör när förutsättningarna ändras
+
+Note:
+Det här är en del av produkten, inte en eftertanke.
+Modeller förändras; att kunna byta är en plan, inte en incident.
+
+---
+
+# Rekryteringsperspektiv 2026
+## Del 3
+
+Note:
+Nu: vad betyder allt detta för er som studenter och för oss som anställande?
+
+--
+
+## Det som blivit viktigare
+
+- systemtänk (beroenden, felscenarier, drift)
+- verifiering (test, utvärdering, felsökning)
+- kommunikation (krav, avgränsningar, "definition of done")
+- ansvar och riskmedvetenhet (säkerhet, integritet, policy)
+
+Note:
+AI gör output billigare.
+Det som särskiljer proffs är verifiering och ansvar.
+
+--
+
+## Det vi gärna ser hos juniora kandidater
+
+- du kan bygga något som kör end-to-end
+- du kan läsa och förbättra kod du inte skrev
+- du kan skriva/förbättra tester
+- du kan iterera med feedback och förklara dina val
+
+Note:
+Du behöver inte vara "AI-magiker".
+Du behöver grunder + bra arbetsloopar + vilja att lära snabbt.
+
+--
+
+## Vanliga fallgropar
+
+- "vibekodning" utan systemförståelse
+- hoppa över verifiering för att output ser rimlig ut
+- tro att AI ersätter omdöme
+
+Note:
+En minnesrad:
+"Plausibelt är inte samma som korrekt. Snabbt är inte samma som säkert."
+
+---
+
+## så…
+
+AI kommer inte ta bort behovet av utvecklare.  
+Den flyttar *var* arbetet sker.
+
+Note:
+Det som ger edge:
+- bättre lärloopar
+- bättre verifiering
+- bättre omdöme
+
+Avsluta med:
+"Implementation blev billigare. Omdöme blev mer värdefullt."
+Tacka och hänvisa till panelen/kvällen.
+
+---
+# Tack!

@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+:root {
+  --r-background-color: #0a0a1a;
+  --r-main-font: 'Inter', sans-serif;
+  --r-main-font-size: 36px;
+  --r-heading-font: 'Inter', sans-serif;
+  --r-main-color: #e0e0e8;
+  --r-heading-color: #ffffff;
+  --r-heading-font-weight: 700;
+  --r-link-color: #6ea8fe;
+  --r-selection-background-color: #6ea8fe44;
+  --accent: #6ea8fe;
+  --accent-warm: #f59e0b;
+}
+
+/* Background */
+.reveal {
+  background: radial-gradient(ellipse at center, #111133 0%, #0a0a1a 70%);
+}
+
+/* ── Typography ── */
+.reveal h1 {
+  font-weight: 800;
+  font-size: 2.2em;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  background: linear-gradient(135deg, #ffffff 0%, #6ea8fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.3em;
+}
+
+.reveal h2 {
+  font-weight: 700;
+  font-size: 1.4em;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+  margin-bottom: 0.5em;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* H2 that follows H1 = subtitle, not accent */
+.reveal h1 + h2 {
+  color: #a0a0c0;
+  font-weight: 400;
+  font-size: 1.1em;
+  margin-top: -0.1em;
+}
+
+.reveal h3 {
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #a0a0c0;
+}
+
+.reveal p,
+.reveal li {
+  font-weight: 300;
+  line-height: 1.7;
+  color: #c8c8d8;
+}
+
+.reveal strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* ── Lists ── */
+.reveal ul,
+.reveal ol {
+  display: block;
+  text-align: left;
+}
+
+.reveal li {
+  margin-bottom: 0.4em;
+}
+
+.reveal li::marker {
+  color: var(--accent);
+}
+
+/* Numbered lists with custom counter */
+.reveal ol {
+  list-style: none;
+  padding-left: 0;
+  counter-reset: item;
+}
+
+.reveal ol li {
+  counter-increment: item;
+}
+
+.reveal ol li::before {
+  content: counter(item) ")";
+  color: var(--accent);
+  font-weight: 700;
+  margin-right: 0.5em;
+}
+
+/* ── Tables ── */
+.reveal table {
+  margin: 0.5em auto;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.reveal table th {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.5em 1.2em;
+  border-bottom: 2px solid #2a2a4a;
+}
+
+.reveal table td {
+  padding: 0.5em 1.2em;
+  font-size: 0.8em;
+  border-bottom: 1px solid #1a1a3a;
+  color: #c8c8d8;
+}
+
+.reveal table td.fragment {
+  color: #f59e0b;
+}
+
+/* ── Blockquotes ── */
+.reveal blockquote {
+  background: rgba(110, 168, 254, 0.08);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  padding: 0.8em 1.2em;
+  font-style: italic;
+  color: #d0d0e0;
+  width: 85%;
+  margin: 0.8em auto;
+}
+
+/* ── Code ── */
+.reveal pre {
+  background: #12122a;
+  border: 1px solid #2a2a4a;
+  border-radius: 10px;
+  padding: 0.8em;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  margin: 0.5em auto;
+}
+
+.reveal code {
+  font-size: 0.85em;
+}
+
+/* ── First slide meta text ── */
+.reveal .slides > section:first-child p {
+  font-size: 0.65em;
+  color: #8888aa;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/* ── Slide number — top-left, out of the way ── */
+.reveal .slide-number {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: #4a4a6a;
+  background: transparent;
+  right: auto !important;
+  left: 16px !important;
+  top: 16px !important;
+  bottom: auto !important;
+}
+
+/* ── Progress bar ── */
+.reveal .progress span {
+  background: linear-gradient(90deg, var(--accent), var(--accent-warm));
+}
+
+/* ── Controls ── */
+.reveal .controls {
+  color: var(--accent);
+}
+
+/* ── Fragment animations ── */
+.reveal .fragment {
+  transition: all 0.3s ease;
+}

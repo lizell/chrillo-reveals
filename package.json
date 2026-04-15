@@ -1,0 +1,18 @@
+{
+  "name": "chrillo-reveals",
+  "version": "1.0.0",
+  "description": "Presentations by Chrille",
+  "scripts": {
+    "dev": "reveal-md . --watch",
+    "build": "reveal-md hur-ai-andrar-yrkesrollen.md --static _site",
+    "prepare": "git config core.hooksPath .hooks"
+  },
+  "devDependencies": {
+    "reveal-md": "^6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lizell/chrillo-reveals.git"
+  },
+  "license": "ISC"
+}

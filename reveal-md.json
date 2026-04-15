@@ -1,0 +1,22 @@
+{
+  "theme": "black",
+  "highlight-theme": "github-dark",
+  "css": "custom.css",
+  "separator": "^---$",
+  "verticalSeparator": "^--$",
+  "revealOptions": {
+    "transition": "slide",
+    "transitionSpeed": "default",
+    "controls": true,
+    "controlsLayout": "edges",
+    "controlsTutorial": true,
+    "controlsBackArrows": "visible",
+    "navigationMode": "default",
+    "progress": true,
+    "hash": true,
+    "slideNumber": "c/t",
+    "center": true,
+    "width": 1280,
+    "height": 720
+  }
+}
