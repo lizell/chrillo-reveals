@@ -1,5 +1,6 @@
 #!/bin/sh
 echo "Building static site..."
 npm run build
+cp index-template.html docs/index.html
 touch docs/.nojekyll
 git add docs/
