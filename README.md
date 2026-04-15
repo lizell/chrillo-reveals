@@ -22,7 +22,7 @@ Opens a live-reload server. Edit any `.md` file and the presentation updates ins
 npm run build
 ```
 
-Generates a static site in `_site/`. This also runs automatically as a pre-commit hook.
+Generates a static site in `docs/`. This also runs automatically as a pre-commit hook.
 
 ## Presentation controls
 

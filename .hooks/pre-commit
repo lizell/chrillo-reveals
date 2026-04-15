@@ -1,4 +1,4 @@
 #!/bin/sh
 echo "Building static site..."
 npm run build
-git add _site/
+git add docs/
