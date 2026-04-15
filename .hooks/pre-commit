@@ -1,4 +1,5 @@
 #!/bin/sh
 echo "Building static site..."
 npm run build
+touch docs/.nojekyll
 git add docs/
