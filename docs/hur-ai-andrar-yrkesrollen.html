@@ -18,7 +18,8 @@
       <div class="slides">
         <section data-markdown data-separator="^---$" data-separator-vertical="^--$">
           <textarea data-template>
-            # Hur AI ändrar yrkesrollen
+            <!-- .slide: data-background-gradient="radial-gradient(circle at 30% 50%, #1a1a4a 0%, #0a0a1a 70%)" -->
+# Hur AI ändrar yrkesrollen
 ## (på riktigt)
 
 Christian Lizell (Athega @ SVT Nyheter & Sport)  
@@ -63,6 +64,7 @@ Håll tempot. Om tiden blir tight: korta case-delen men behåll rekryteringsdele
 
 ---
 
+<!-- .slide: data-background-gradient="linear-gradient(135deg, #1a1a4a 0%, #2a1a3a 100%)" -->
 # Vad som faktiskt förändrats i yrkesrollen
 ## Del 1
 
@@ -71,19 +73,20 @@ Note:
 
 --
 
-## Förändring 1: Implementation blev "billig"
+## 💸 Förändring 1: Implementation blev "billig"
 
-- Det kostar lite att prova en idé
-- Det är normalt att kasta och börja om
-- Omskrivningar/refaktoreringar blir rationella, inte dramatiska
+- Det som tog månader kan nu ske på timmar eller dagar
+- Det kostar lite att prova en idé — normalt att kasta och börja om
+- Kod blir kommunikationsmediet: man bygger istället för att diskutera diagram
 
 Note:
-Förr: mycket "sunk cost" och försiktighet.
-Nu: snabbare lärloopar. Målet är inte fart för fartens skull, utan att hitta rätt lösning snabbare.
+Förr: mycket "sunk cost", försiktighet och abstrakta planeringsmöten.
+Nu: bygg en fungerande prototyp, låt alla interagera med den, iterera därifrån.
+Designers kan uppleva flödet istället för att föreställa sig det.
 
 --
 
-## Förändring 2: Kvalitetsarbete flyttade framåt
+## 🎯 Förändring 2: Kvalitetsarbete flyttade framåt
 
 - Mer tid på intention, avgränsningar, edge cases
 - Mindre "hero debugging" i slutet
@@ -95,7 +98,7 @@ Därför blir krav, teststrategi och riskhantering viktigare.
 
 --
 
-## Förändring 3: Omdöme blev mer värdefullt
+## 🧠 Förändring 3: Omdöme blev mer värdefullt
 
 - Kan du bedöma output du inte skrivit?
 - Kan du resonera om risk, säkerhet och konsekvenser?
@@ -121,6 +124,7 @@ Den som inte gör det blir beroende av att AI alltid har rätt — och det har d
 
 ---
 
+<!-- .slide: data-background-gradient="linear-gradient(135deg, #0a2a3a 0%, #1a1a4a 100%)" -->
 # Case: Ossy
 ## (SVT Nyheter & Sport)
 ## Del 2
@@ -144,6 +148,14 @@ Poängen: produkt + återanvändbar kapacitet.
 
 --
 
+<iframe src="https://australis.svt.se/quickshot/kross/widgets/fUBlY/webframe.html?darkMode=true" width="900" height="100%" style="border: 1px solid #2a2a4a; border-radius: 16px; background: #0a0a1a; height: 620px;"></iframe>
+
+Note:
+Visa snabbt — ställ en fråga som funkar, t.ex. "Vilka matcher visas ikväll?" eller "Vad hände i allsvenskan senast?"
+Lägg inte för lång tid här, max 30 sek.
+
+--
+
 ## Teamet (och varför det är intressant)
 
 - 3 utvecklare + 1 redaktionell person
@@ -152,12 +164,13 @@ Poängen: produkt + återanvändbar kapacitet.
 - Vi löste det inte med fler roller — utan med en annan arbetsmetod
 
 Note:
-Grundförutsättningen: teamet är litet med flit, inte av brist.
+Teamet är litet med flit, inte av brist.
+Alla kan interagera med fungerande kod — redaktören ser beteendet direkt, inte via mockups.
 Arbetsmetoden är det som gör det möjligt.
 
 --
 
-## Vår standard-loop
+## 🔄 Vår standard-loop
 
 <div class="fragment semi-fade-out" data-fragment-index="1">
 
@@ -182,13 +195,14 @@ Vi synkar ofta, ibland sitter vi i samma möte och jobbar parallellt.
 
 ## Radikalt (?): ingen kod skrivs för hand
 
+- AI är inte ett sidoverktyg — det är vårt primära sätt att bygga
 - All kod genereras av AI (t.ex. Claude/Codex)
 - Även "akutfixar" går ofta snabbare och med färre misstag via AI
-- Människor styr intention och bedömer risk
 
 Note:
 Motintuitivt: "jag fixar bara snabbt" är en klassisk källa till slarv och regressioner.
 AI kan ge mer konsekvent output om kontext + tester finns i loopen.
+Men det kräver att man förstår vad som byggs och varför det fungerar.
 
 --
 
@@ -204,7 +218,7 @@ Det är inte slöseri när kostnaden för iteration är låg och lärandet är h
 
 --
 
-## När det blir svårt
+## ⚠️ När det blir svårt
 
 <table>
 <tr><th>Problem</th><th class="fragment" data-fragment-index="1">Motdrag</th></tr>
@@ -218,7 +232,7 @@ Det här är en yrkesskicklighet — att veta när man ska byta approach.
 
 --
 
-## Test av chatbot: du kan inte testa exakta strängar
+## 🧪 Test av chatbot: du kan inte testa exakta strängar
 
 Vi använder:
 - enhetstester
@@ -232,7 +246,7 @@ Det blir inte 100% hallucinationsfritt, men vi bygger system för att upptäcka 
 
 --
 
-## Säkerhet och förtroende (icke-förhandlingsbart)
+## 🔒 Säkerhet och förtroende (icke-förhandlingsbart)
 
 - flera lager av guardrails
 - modeller/verktyg reviewar varandra
@@ -245,7 +259,7 @@ Det kräver finjustering, inte bara "släppa fri".
 
 --
 
-## Drift och kostnadskontroll
+## 📊 Drift och kostnadskontroll
 
 - övervakning (dashboards/alerts)
 - cost dashboards och trösklar
@@ -257,6 +271,7 @@ Modeller förändras; att kunna byta är en plan, inte en incident.
 
 ---
 
+<!-- .slide: data-background-gradient="linear-gradient(135deg, #2a1a3a 0%, #1a2a1a 100%)" -->
 # Rekryteringsperspektiv 2026
 ## Del 3
 
@@ -291,7 +306,7 @@ Du behöver grunder + bra arbetsloopar + vilja att lära snabbt.
 
 --
 
-## Vanliga fallgropar
+## ⚡ Vanliga fallgropar
 
 - "vibekodning" utan systemförståelse
 - hoppa över verifiering för att output ser rimlig ut
@@ -303,6 +318,7 @@ En minnesrad:
 
 ---
 
+<!-- .slide: data-background-gradient="radial-gradient(circle at 50% 50%, #1a2a4a 0%, #0a0a1a 70%)" -->
 ## så…
 
 AI kommer inte ta bort behovet av utvecklare.  
@@ -319,7 +335,10 @@ Avsluta med:
 Tacka och hänvisa till panelen/kvällen.
 
 ---
+
+<!-- .slide: data-background-gradient="radial-gradient(circle at 50% 50%, #1a1a4a 0%, #0a0a1a 60%)" -->
 # Tack!
+
           </textarea>
         </section>
       </div>
