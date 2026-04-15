@@ -35,23 +35,10 @@ Generates a static site in `docs/`. This also runs automatically as a pre-commit
 | `F` | Fullscreen |
 | `Esc` | Exit overview / fullscreen |
 
-## Speaker notes on phone
+## Speaker notes
 
-When hosting on GitHub Pages (e.g. `https://lizell.github.io/chrillo-reveals/`):
-
-1. Open the presentation URL on your laptop
-2. On your phone (same WiFi), open the same URL with `?view=speaker` appended, e.g.
-   `https://lizell.github.io/chrillo-reveals/?view=speaker`
-
-Note: slides are **not synced** between devices in this mode. For synced control you would need the [multiplex plugin](https://revealjs.com/multiplex/) with a socket.io server.
-
-### Local network alternative
-
-```bash
-npm run dev -- --host 0.0.0.0
-```
-
-Then on your phone, go to `http://<your-ip>:1948/<presentation>.md?view=speaker`.
+Press `S` during a presentation to open the speaker view in a popup window.
+It shows your notes, a preview of the next slide, and a timer.
 
 ## Adding a new presentation
 

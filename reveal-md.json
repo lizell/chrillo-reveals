@@ -2,7 +2,7 @@
   "theme": "black",
   "highlight-theme": "github-dark",
   "css": "custom.css",
-  "separator": "^---$",
+    "separator": "^---$",
   "verticalSeparator": "^--$",
   "revealOptions": {
     "transition": "slide",
