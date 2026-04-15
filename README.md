@@ -55,6 +55,7 @@ Then on your phone, go to `http://<your-ip>:1948/<presentation>.md?view=speaker`
 
 ## Adding a new presentation
 
-1. Create a new `.md` file in the project root
+1. Create a new `.md` file in `slides/`
 2. Use `---` for horizontal slides and `--` for vertical slides
-3. Update the `build` script in `package.json` if needed
+3. Put images in `slides/assets/images/`
+4. Run `npm run dev` — the index page lists all presentations

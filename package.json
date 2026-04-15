@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Presentations by Chrille",
   "scripts": {
-    "dev": "reveal-md . --watch",
-    "build": "reveal-md hur-ai-andrar-yrkesrollen.md --static docs",
+    "dev": "reveal-md slides/ --watch",
+    "build": "reveal-md slides/ --static docs --static-dirs=slides/assets",
     "prepare": "git config core.hooksPath .hooks"
   },
   "devDependencies": {
