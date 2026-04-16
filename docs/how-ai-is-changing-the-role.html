@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>reveal-md</title>
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./dist/reset.css" />
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
+
+    <link rel="stylesheet" href="./_assets/custom.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown data-separator="^---$" data-separator-vertical="^--$">
+          <textarea data-template>
+            <!-- .slide: data-background-gradient="radial-gradient(circle at 30% 50%, #1a1a4a 0%, #0a0a1a 70%)" -->
+# How AI is changing the role
+## (for real)
+
+Christian Lizell (Athega @ SVT News & Sports)  
+Open House · Chas Academy · 20 to 25 min
+
+Note:
+Goal: add nuance. Show what has actually changed in day-to-day work.
+I use Ossy as a concrete example, but the real focus is the way of working and what becomes more important in the role.
+
+---
+
+# What this is about
+## (and what it is not)
+
+--
+
+## This is about
+- Practical changes in how we build software today
+- One concrete case: Ossy (SVT)
+- What we look for when hiring in 2026
+
+--
+
+## It is not
+- An AI demo or tool commercial
+- An "AI is taking our jobs" talk
+- A technical deep dive into models
+
+Note:
+Set expectations. I am talking about working methods, quality, risk, and responsibility.
+
+---
+
+## Structure (20 to 25 min)
+
+1) What has actually changed (5 min)  
+2) Case: Ossy and how we work (12 to 15 min)  
+3) Hiring perspective 2026 (3 to 5 min)
+
+Note:
+Keep the pace up. If time gets tight, shorten the case section but keep the hiring section.
+
+---
+
+<!-- .slide: data-background-gradient="linear-gradient(135deg, #1a1a4a 0%, #2a1a3a 100%)" -->
+# What has actually changed in the role
+## Part 1
+
+Note:
+Transition from abstract AI talk to concrete everyday changes.
+
+--
+
+## 💸 Change 1: Implementation became "cheap"
+
+- Things that used to take months can now happen in hours or days
+- It is cheap to try an idea, so throwing work away and starting over is normal
+- Code becomes the communication medium, you build instead of discussing diagrams
+
+Note:
+Before: lots of sunk cost, caution, and abstract planning meetings.
+Now: build a working prototype, let people interact with it, and iterate from there.
+Designers can experience the flow instead of imagining it.
+
+--
+
+## 🎯 Change 2: Quality work moved earlier
+
+- More time goes into intent, boundaries, and edge cases
+- Less late-stage hero debugging
+- Quality is built as a system, not as a review step
+
+Note:
+AI can produce output quickly. The value is in defining what is right, safe, and done.
+That is why requirements, test strategy, and risk handling matter more.
+
+--
+
+## 🧠 Change 3: Judgment became more valuable
+
+- Can you evaluate output you did not write?
+- Can you reason about risk, security, and consequences?
+- Can you explain why something is correct?
+
+Note:
+AI does not remove responsibility. It concentrates responsibility into judgment and verification.
+That is why fundamental systems understanding matters even more.
+
+--
+
+### Why you still need to know how to code
+
+- You cannot evaluate what you do not understand
+- Systems understanding is the foundation of judgment
+- Without it, you do not know when AI is wrong, or why
+- "Coding" is less about typing and more about thinking in systems
+
+Note:
+The point: AI makes you write less code, not understand less.
+People who understand architecture, dependencies, and failure handling can steer AI.
+People who do not become dependent on AI always being right, and it is not.
+
+---
+
+<!-- .slide: data-background-gradient="linear-gradient(135deg, #0a2a3a 0%, #1a1a4a 100%)" -->
+# Case: Ossy
+## (SVT News & Sports)
+## Part 2
+
+![Ossy](assets/images/ossy.png) <!-- .element: style="height: 300px; border: none; box-shadow: none; background: transparent;" -->
+
+Note:
+Now let us make it concrete: what does working in an AI-first production project actually look like?
+
+--
+
+## What is Ossy?
+
+- SVT's first public AI service, a chatbot in an SVT context
+- Used heavily and successfully during the Olympics
+- Plus, a framework for quickly creating new expert bots
+
+Note:
+Max 30 seconds. No feature tour.
+The point is product plus reusable capability.
+
+--
+
+<iframe src="https://australis.svt.se/quickshot/kross/widgets/fUBlY/webframe.html?darkMode=true" width="900" height="100%" style="border: 1px solid #2a2a4a; border-radius: 16px; background: #0a0a1a; height: 620px;"></iframe>
+
+Note:
+Show it briefly. Ask a question that works, for example "Which matches are on tonight?" or "What happened in Allsvenskan most recently?"
+Do not spend too long here, max 30 seconds.
+
+--
+
+## The team (and why that matters)
+
+- 3 developers + 1 editorial person
+- No dedicated UX, tester, AD, or DevOps
+- Very small team, still production-grade
+- We did not solve that with more roles, but with a different way of working
+
+Note:
+The team is small by choice, not by accident.
+Everyone can interact with working code, the editor sees behavior directly instead of through mockups.
+The working method is what makes that possible.
+
+--
+
+## 🔄 Our standard loop
+
+<div class="fragment semi-fade-out" data-fragment-index="1">
+
+Idea → Prompt jam → Generate → Verify → Test → PR → Release
+
+</div>
+
+<div class="fragment" data-fragment-index="1">
+
+<span style="color: #a78bfa">🧑🤖 Idea</span> → <span style="color: #a78bfa">🧑🤖 Prompt jam</span> → <span style="color: #f59e0b">🤖 Generate</span> → <span style="color: #a78bfa">🧑🤖 Verify</span> → <span style="color: #a78bfa">🧑🤖 Test</span> → <span style="color: #a78bfa">🧑🤖 PR</span> → <span style="color: #6ea8fe">🧑 Release</span>
+
+<small>🧑 = human &nbsp; 🤖 = AI agent &nbsp; 🧑🤖 = together</small>
+
+</div>
+
+Note:
+Prompt jam means we shape the request together:
+goals, boundaries, risks, and acceptance criteria.
+We sync often, sometimes in the same meeting while working in parallel.
+
+--
+
+## Radical (?): no code is written by hand
+
+- AI is not a side tool, it is our primary way of building
+- All code is generated by AI, for example Claude or Codex
+- Even urgent fixes are often faster and less error-prone through AI
+
+Note:
+Counterintuitive: "I will just fix it quickly" is a classic source of sloppiness and regressions.
+AI can produce more consistent output if context and tests are part of the loop.
+But that still requires understanding what is being built and why it works.
+
+--
+
+## Why it moves fast without becoming careless
+
+- Implementation and testing are cheap
+- Easy to try, throw away, and try again
+- "Done" = good enough for now → release → iterate
+
+Note:
+We have rewritten large parts several times.
+That is not wasteful when iteration is cheap and learning is high.
+
+--
+
+## ⚠️ When it gets hard
+
+<table>
+<tr><th>Problem</th><th class="fragment" data-fragment-index="1">Countermove</th></tr>
+<tr><td>AI can misunderstand context</td><td class="fragment" data-fragment-index="1">Clearer context + requirements + sources</td></tr>
+<tr><td>AI can rely on outdated documentation</td><td class="fragment" data-fragment-index="2">Point it to the right knowledge and documentation</td></tr>
+<tr><td>You can get stuck in frustrating error loops</td><td class="fragment" data-fragment-index="3">Switch model or tool when it does not fit</td></tr>
+</table>
+
+Note:
+This is a professional skill in itself, knowing when to change approach.
+
+--
+
+## 🧪 Testing a chatbot: you cannot test exact strings
+
+We use:
+- unit tests
+- integration tests
+- an LLM judge that evaluates whether answers are reasonable
+
+Note:
+Chatbots are not deterministic UI strings.
+So we test scenarios and acceptance instead.
+It will not be 100 percent hallucination-free, but we build systems that detect and limit errors.
+
+--
+
+## 🔒 Security and trust (non-negotiable)
+
+- multiple layers of guardrails
+- models and tools review each other
+- manual checks where needed
+
+Note:
+Guardrails protect both the bot and the user.
+A practical example: sometimes the system blocks the wrong thing, for example a request like "show clips of Elvira" can be misread.
+That takes tuning, not just "letting it run free".
+
+--
+
+## 📊 Operations and cost control
+
+- monitoring, dashboards, alerts
+- cost dashboards and thresholds
+- we switch model or provider when conditions change
+
+Note:
+This is part of the product, not an afterthought.
+Models change, and being able to switch is a plan, not an incident.
+
+---
+
+<!-- .slide: data-background-gradient="linear-gradient(135deg, #2a1a3a 0%, #1a2a1a 100%)" -->
+# Hiring perspective 2026
+## Part 3
+
+Note:
+Now: what does all of this mean for you as students, and for us as hiring teams?
+
+--
+
+## What has become more important
+
+- systems thinking, dependencies, failure scenarios, operations
+- verification, testing, evaluation, debugging
+- communication, requirements, boundaries, definition of done
+- responsibility and risk awareness, security, integrity, policy
+
+Note:
+AI makes output cheaper.
+What separates professionals is verification and responsibility.
+
+--
+
+## What we like to see in junior candidates
+
+- you can build something that runs end to end
+- you can read and improve code you did not write
+- you can write and improve tests
+- you can iterate with feedback and explain your choices
+
+Note:
+You do not need to be an "AI wizard".
+You need fundamentals, good working loops, and a willingness to learn quickly.
+
+--
+
+## ⚡ Common pitfalls
+
+- vibe coding without systems understanding
+- skipping verification because the output looks plausible
+- believing AI replaces judgment
+
+Note:
+A line worth remembering:
+"Plausible is not the same as correct. Fast is not the same as safe."
+
+---
+
+<!-- .slide: data-background-gradient="radial-gradient(circle at 50% 50%, #1a2a4a 0%, #0a0a1a 70%)" -->
+## so...
+
+AI will not remove the need for developers.  
+It shifts *where* the work happens.
+
+Note:
+What gives you an edge:
+- better learning loops
+- better verification
+- better judgment
+
+End with:
+"Implementation became cheaper. Judgment became more valuable."
+Thank people and point them to the panel or the rest of the evening.
+
+---
+
+<!-- .slide: data-background-gradient="radial-gradient(circle at 50% 50%, #1a1a4a 0%, #0a0a1a 60%)" -->
+# Thank you!
+
+          </textarea>
+        </section>
+      </div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+
+    <script src="./mermaid/dist/mermaid.min.js"></script>
+
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        slideNumber: true,
+        highlight: {
+          highlightOnLoad: false
+        },
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"transition":"slide","transitionSpeed":"default","controls":true,"controlsLayout":"edges","controlsTutorial":true,"controlsBackArrows":"visible","navigationMode":"default","progress":true,"hash":true,"slideNumber":"c/t","center":true,"width":1280,"height":720,"_":["slides/"],"static":"docs","static-dirs":"slides/assets","staticDirs":"slides/assets"}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+      Reveal.addEventListener('ready', function (event) {
+        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
+        const hlp = Reveal.getPlugin('highlight');
+        blocks.forEach(hlp.highlightBlock);
+      });
+    </script>
+
+    <script>
+      const mermaidOptions = extend({ startOnLoad: false }, {});
+      mermaid.startOnLoad = false;
+      mermaid.initialize(mermaidOptions);
+      const cb = function (event) {
+        mermaid.init(mermaidOptions, '.stack.present > .present pre code.mermaid');
+        mermaid.init(mermaidOptions, '.slides > .present:not(.stack) pre code.mermaid');
+      }
+      Reveal.addEventListener('ready', cb);
+      Reveal.addEventListener('slidetransitionend', cb);
+    </script>
+  </body>
+</html>
