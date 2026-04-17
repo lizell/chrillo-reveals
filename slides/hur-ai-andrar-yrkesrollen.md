@@ -36,11 +36,12 @@ Sätt förväntningar. Jag pratar om arbetsmetod, kvalitet, risk och ansvar.
 ## Upplägg (20–25 min)
 
 1) Vad som faktiskt förändrats (5 min)  
-2) Case: Ossy och hur vi jobbar (12–15 min)  
-3) Rekryteringsperspektiv 2026 (3–5 min)
+2) Case: Ossy och hur vi jobbar (10–12 min)  
+3) Vad Chas tränar er för (3–4 min)
+4) Rekryteringsperspektiv 2026 (3–5 min)
 
 Note:
-Håll tempot. Om tiden blir tight: korta case-delen men behåll rekryteringsdelen.
+Håll tempot. Om tiden blir tight: korta demo/case-delen men behåll Chas-kopplingen och rekryteringsdelen.
 
 ---
 
@@ -251,9 +252,71 @@ Modeller förändras; att kunna byta är en plan, inte en incident.
 
 ---
 
+## Det här är också en utbildningsfråga
+
+- AI är nu en naturlig del av utvecklingsprocessen
+- Men det räcker inte att kunna "få fram kod"
+- Du måste kunna resonera, granska och förbättra
+- Det liknar verkligheten mer än gamla skoluppgifter gjorde
+
+Note:
+Koppla till publiken: det här är varför utbildningen inte bara kan handla om syntax och tutorials.
+Det viktiga är arbetsloopen: förstå problemet, använda verktyg klokt, verifiera och kommunicera.
+
+---
+
+<!-- .slide: data-background-gradient="linear-gradient(135deg, #1a243a 0%, #113a2d 100%)" -->
+# Vad Chas verkar träna er för
+## Del 3
+
+Note:
+Här visar jag att jag faktiskt läst på. Knyt till deras sajt utan att låta som reklamfilm.
+
+--
+
+## Det jag tycker de verkar fatta
+
+- AI beskrivs som en del av arbetsprocessen, inte som magi
+- De betonar branschnärhet tidigt: talks, meetups, studiebesök
+- De verkar värdera resonemang och kommunikation, inte bara rätt svar
+- Tvärfunktionellt arbete dyker upp flera gånger
+
+Note:
+Det här matchar ganska väl hur jobbet faktiskt ser ut 2026.
+Särskilt bra: fokus på granskning, bedömning och samarbete runt AI-genererad output.
+
+--
+
+## Om jag ska översätta det till arbetslivet
+
+Chas verkar träna fyra saker som faktiskt spelar roll:
+
+1. bygga något som fungerar
+2. resonera om varför det fungerar
+3. samarbeta med andra roller
+4. anpassa sig när verktygen ändras
+
+Note:
+Det här är ett bra ställe att vara generös men konkret.
+Inte "ni lär er allt", utan "det här är relevanta träningsytor för dagens arbetsliv".
+
+--
+
+## Det jag själv hade maxat ännu mer
+
+- mer systemförståelse: integrationer, drift, beroenden
+- mer verifiering: tester, utvärdering, felsökning
+- mer risk/snack om säkerhet, integritet och policy
+- mer träning i att presentera tekniska avvägningar tydligt
+
+Note:
+Säg detta vänligt. Det blir ett värdefullt inspel till studenterna: vad de själva bör jaga utöver kursplanen.
+
+---
+
 <!-- .slide: data-background-gradient="linear-gradient(135deg, #2a1a3a 0%, #1a2a1a 100%)" -->
 # Rekryteringsperspektiv 2026
-## Del 3
+## Del 4
 
 Note:
 Nu: vad betyder allt detta för er som studenter och för oss som anställande?
@@ -279,10 +342,12 @@ Det som särskiljer proffs är verifiering och ansvar.
 - du kan läsa och förbättra kod du inte skrev
 - du kan skriva/förbättra tester
 - du kan iterera med feedback och förklara dina val
+- du kan visa hur du tänkte, inte bara vad du byggde
 
 Note:
 Du behöver inte vara "AI-magiker".
 Du behöver grunder + bra arbetsloopar + vilja att lära snabbt.
+Videomoment, demos och muntliga resonemang blir därför mer relevanta än många tror.
 
 --
 
@@ -291,6 +356,7 @@ Du behöver grunder + bra arbetsloopar + vilja att lära snabbt.
 - "vibekodning" utan systemförståelse
 - hoppa över verifiering för att output ser rimlig ut
 - tro att AI ersätter omdöme
+- nöja sig med att vara bra på prompts, men svag på grunderna
 
 Note:
 En minnesrad:
