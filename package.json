@@ -4,7 +4,7 @@
   "description": "Presentations by Chrille",
   "scripts": {
     "dev": "reveal-md slides/ --watch",
-    "build": "reveal-md slides/ --static docs --static-dirs=slides/assets",
+    "build": "reveal-md slides/ --static docs --static-dirs=slides/assets && cp site-index.html docs/index.html",
     "prepare": "git config core.hooksPath .hooks"
   },
   "devDependencies": {
