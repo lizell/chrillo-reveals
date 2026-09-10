@@ -1,1 +1,4 @@
 node_modules/
+
+# Local presentation export
+/workshops/code-base-2026/presentation.pdf
