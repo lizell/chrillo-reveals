@@ -84,6 +84,12 @@ html.print-pdf .reveal .case-media video { display: none; }
 html.print-pdf .reveal .case-media .video-print { display: block; }
 @media print { .reveal .case-media video { display: none; } .reveal .case-media .video-print { display: block; } }
 .reveal .slides .about-athega .cols p, .reveal .slides .about-athega .callout { color: #173c37; font-size: 28px; }
+.reveal .slides > section > section.shirt-slide { padding: 40px 60px; }
+.reveal .shirt-slide .kicker { margin-bottom: 18px; }
+.reveal .shirt-layout { display: grid; grid-template-columns: 1fr 400px; gap: 40px; align-items: center; }
+.reveal .shirt-layout h1 { font-size: 68px; }
+.reveal .slides .shirt-layout p { color: #526960; font-size: 29px; }
+.reveal .shirt-layout img { display: block; width: 400px; height: 570px; object-fit: contain; margin: 0; border: 0; box-shadow: none; background: none; }
 </style>
 
 <p class="kicker">Code Base · Järvsö · 19 september 2026</p>
@@ -121,7 +127,7 @@ Valbar introduktion · cirka 30 sekunder
 - Peka ut ett par logotyper som hjälper publiken förstå din bakgrund.
 - ”I dag utgår jag från arbetet på SVT Nyheter och Sport, där vi har provat AI i både nya och befintliga produkter.”
 
-**↓ Athega:** ”Och Athega är konsultbolaget jag kommer ifrån.”
+**↓ Athega:** ”Och Athega är bolaget jag kommer ifrån.”
 **→ Huvudspåret:** ”Men först – var befinner ni er?”
 
 --
@@ -149,8 +155,24 @@ Valbar introduktion · cirka 45 sekunder
 
 Underlag: Athegas företagspresentation, tillhandahållen av Christian.
 
+**↓ Tröjan:** ”Jag hittade också något passande inför den här resan.”
 **→ Huvudspåret:** ”Men nu till er – var befinner ni er själva med AI?”
 
+--
+
+<!-- .slide: class="shirt-slide" -->
+<p class="kicker">Om mig · Code Base 2010 → 2026</p>
+
+<div class="shirt-layout"><div><h1>16 år senare.<br>Rätt tröja igen.</h1><p>Hittade den i garderoben<br>inför resan till Järvsö.</p></div><img src="assets/images/christian-code-base-2010.jpg" alt="Christian i en Athega-tröja med texten Code Base 2010 och en Commodore-keps."></div>
+
+Note:
+Valbar introduktion · cirka 15 sekunder
+
+”Jag hittade en sexton år gammal tröja med Code Base på. Så klädfrågan inför den här helgen löste sig själv.”
+
+Pausa och låt bilden göra jobbet.
+
+**→ Huvudspåret:** ”Men nu till er – var befinner ni er?”
 
 ---
 
@@ -471,20 +493,22 @@ Note:
 <!-- .slide: class="chapter" data-background-color="#173c37" -->
 <p class="kicker">02 · Från första prompt</p>
 
-# Ge agenten ett jobb<br>som går att avsluta.
+# Behandla AI:n<br>som en kollega.
 
-<p>Scope · kontext · klart när</p>
+<p>Du kommer bli förvånad över vad den klarar av.</p>
 
 <p class="case-nav">↓ Begrepp</p>
 
 Note:
 16:00–16:30 · 30 sek
 
-”Med agent menar jag här en AI som kan läsa filer, ändra kod och köra verktyg. Då behöver vi ge den ett jobb som går att avsluta.”
+”Mitt enklaste råd för att komma igång: behandla AI:n som en kollega. Du kommer bli förvånad över vad den klarar av.”
 
-- Vad ska bli bättre?
-- Var får den ändra?
-- Hur ser vi att det blev rätt?
+- Berätta vad du vill åstadkomma och varför. Ge sammanhanget, som till någon som är ny i uppgiften.
+- Bolla idéer, be om förslag och ställ följdfrågor. Du behöver inte ha den perfekta prompten från början.
+- Titta på resultatet tillsammans och ge konkret återkoppling: vad blev bra, vad behöver ändras?
+
+”Med en kodagent kan samtalet också bli handling: den kan läsa filer, ändra kod och köra tester. Ge den en tydlig uppgift och följ upp resultatet.”
 
 **Vidare:** ”Börja med något där ni själva kan bedöma svaret.”
 
@@ -1328,7 +1352,7 @@ Ett exempel att anpassa: ”Vi använder AI för den här avgränsade ändringen
 
 # Litet scope.<br>Snabb feedback.<br>Mänskligt omdöme.
 
-<p>Från första prompt till en ändring ni vågar stå för.</p>
+<p>Behandla AI:n som en kollega.<br>Du kommer bli förvånad över vad den klarar av.</p>
 
 Note:
 39:00–40:00 · 1 min · Sänk tempot
@@ -1339,7 +1363,9 @@ Note:
 - **Snabb feedback:** ta reda på om ni är på rätt väg medan ändringen fortfarande är liten.
 - **Mänskligt omdöme:** förstå resultatet och ta ansvar för att acceptera det.
 
-”Prova nästa vecka. Visa en kollega både det som blev bra och det som blev fel. Det är så ni hittar ert arbetssätt.”
+”Och mitt enklaste råd: behandla AI:n som en kollega. Du kommer bli förvånad över vad den klarar av.”
+
+”Prova nästa vecka. Berätta vad ni vill åstadkomma, bolla och återkoppla. Visa sedan varandra både det som blev bra och det som blev fel.”
 
 **Vidare:** ”Vad skulle hindra er från att börja?”
 

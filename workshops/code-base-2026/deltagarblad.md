@@ -2,6 +2,12 @@
 
 Code Base · Järvsö · 19 september 2026 · Christian Lizell
 
+## Mitt enklaste råd
+
+Behandla AI:n som en kollega. Du kommer bli förvånad över vad den klarar av.
+
+Berätta vad du vill åstadkomma, ge sammanhang, bolla förslag och återkoppla på resultatet. Du behöver inte formulera en perfekt prompt innan ni börjar.
+
 ## Mitt första försök
 
 - **Uppgiften:** På måndag provar vi AI för att …

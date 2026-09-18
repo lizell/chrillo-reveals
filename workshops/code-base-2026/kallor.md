@@ -74,3 +74,5 @@ Diagrammen är pedagogiska scheman utifrån de redan beskrivna arbetssätten. Lo
 - Athegas företagspresentation, läst 10 september 2026: grundat 1997, systemutveckling, AI/maskininlärning, teknisk granskning och branscher. Logotyp hämtad från samma webbplats.
 
 - Underlaget ”Om Athega”: teknikintresset, aktivt ägande, långa kundrelationer och AI-satsningen sedan 2016. Underlag till omarbetad introduktion.
+
+- Christian tillhandahöll 18 september 2026 ett foto av sig själv i sin Code Base-tröja från 2010. Bilden har konverterats från HEIC till JPEG och skalats ned för webben.
