@@ -3,7 +3,7 @@
 **Kom igång med AI i utvecklingsarbetet – så här gjorde vi på SVT**  
 Christian Lizell · Athega / SVT Nyheter & Sport
 
-Färdig presentation i [slides/code-base-2026.md](../../slides/code-base-2026.md). PDF kan exporteras lokalt för visning utan webbläsarserver; den versionshanteras inte. 25 huvudbilder, 3 valbara introduktionsbilder om Christian och Athega, 7 vertikala casefördjupningar, 1 valbart botexempel, 11 begreppsbilder, 11 tipsbilder och 3 reservbilder (61 bilder totalt). Alla bilder har talarstöd med muntliga formuleringar, korta hållpunkter, övergångar och tidsangivelser. Källor och redaktionella avgränsningar finns i källdokumentet. Tid och rum är ännu inte fastställda enligt arrangörens underlag.
+Färdig presentation i [slides/code-base-2026.md](../../slides/code-base-2026.md). PDF kan exporteras lokalt för visning utan webbläsarserver; den versionshanteras inte. 25 huvudbilder, 3 valbara introduktionsbilder om Christian och Athega, 7 vertikala casefördjupningar, 1 valbart botexempel, 11 begreppsbilder, 11 tipsbilder, 4 valbara demobilder i slutet och 3 reservbilder (65 bilder totalt). Alla bilder har talarstöd med muntliga formuleringar, korta hållpunkter, övergångar och tidsangivelser. Källor och redaktionella avgränsningar finns i källdokumentet. Tid och rum är ännu inte fastställda enligt arrangörens underlag.
 
 ## Körschema
 
@@ -23,7 +23,7 @@ Färdig presentation i [slides/code-base-2026.md](../../slides/code-base-2026.md
 | 40–45 | 25 | Frågor |
 | Vid behov | 26–28 | Reserv: äldre kod, genvägar till fördjupningar och källor |
 
-Bildnummer i tabellen avser **horisontella positioner**. Räknaren i presentationen och sidnumren i PDF räknar även de 33 vertikala bilderna. Caseöversikterna ligger på PDF-sidorna 7 (Ossy), 12 (Login) och 15 (Astrid).
+Bildnummer i tabellen avser **horisontella positioner**. Räknaren i presentationen och sidnumren i PDF räknar även de 37 vertikala bilderna. Caseöversikterna ligger på PDF-sidorna 7 (Ossy), 12 (Login) och 15 (Astrid).
 
 45 minuter är normalversionen. Frågorna ingår. 50 minuter är arrangörens absoluta max, inte planerad speltid.
 
@@ -74,4 +74,8 @@ De tre SVT-casen bygger på Christians inspelade berättelse från den 10 septem
 
 ## Verifiering
 
-Statisk build genomförd. Casebilderna och de fem diagrammen har även granskats visuellt i skärmbilder från Chrome, inklusive radbrytningar, textavstånd och videons utskriftsbild. Samtliga 61 bilder kontrollerade i Chrome utan innehåll utanför bildytan och utan JavaScript-fel. Lokal videouppspelning, bilder, horisontell och vertikal pilnavigering, översiktsläge och talarvyns visning av rätt anteckningar kontrollerade. PDF exporterad från samma statiska presentation. Uppdatera PDF-filen efter framtida innehållsändringar; den ingår inte i `npm run build`.
+Statisk build genomförd. Casebilderna och de fem diagrammen har även granskats visuellt i skärmbilder från Chrome, inklusive radbrytningar, textavstånd och videons utskriftsbild. Samtliga 65 bilder kontrollerade i Chrome utan innehåll utanför bildytan och utan JavaScript-fel. Lokal videouppspelning, bilder, horisontell och vertikal pilnavigering, översiktsläge och talarvyns visning av rätt anteckningar kontrollerade. PDF exporterad från samma statiska presentation. Uppdatera PDF-filen efter framtida innehållsändringar; den ingår inte i `npm run build`.
+
+## Valbar demo från Slack till lösning
+
+Under ”Ta med er” finns fyra vertikala bilder: frågan i Slack, delegeringen, återkopplingen och en humoristisk reaktion från en annan tråd. Räkna med cirka 2,5 minuter ur frågetiden. Skärmbilderna är lokala, anonymiserade och kan öppnas i större storlek. Inga länkar till de interna ärendena eller trådarna följer med.

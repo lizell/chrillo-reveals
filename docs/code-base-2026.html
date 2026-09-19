@@ -104,6 +104,17 @@ html.print-pdf .reveal .case-media .video-print { display: block; }
 .reveal .shirt-layout h1 { font-size: 68px; }
 .reveal .slides .shirt-layout p { color: #526960; font-size: 29px; }
 .reveal .shirt-layout img { display: block; width: 400px; height: 570px; object-fit: contain; margin: 0; border: 0; box-shadow: none; background: none; }
+.reveal .slides > section > section.slack-demo-slide { padding: 35px 60px; }
+.reveal .slack-demo-slide .kicker { margin-bottom: 16px; }
+.reveal .slack-demo-slide h1 { font-size: 46px; margin: 0 0 22px; }
+.reveal .slack-demo-slide img { display: block; border: 0; margin: 0 auto; background: none; box-shadow: none; object-fit: contain; }
+.reveal .slack-request { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.reveal .slack-request img { width: 100%; height: 510px; object-position: top; }
+.reveal .slack-delegation { width: 100%; height: 515px; }
+.reveal .slack-result { display: grid; grid-template-columns: 325px 1fr; gap: 30px; align-items: center; }
+.reveal .slack-result img { width: 100%; height: 510px; }
+.reveal .slack-punchline h1 { margin-top: 70px; font-size: 56px; }
+.reveal .slack-punchline img { width: 100%; max-width: 1000px; height: auto; margin-top: 65px; }
 </style>
 
 <p class="kicker">Code Base · Järvsö · 19 september 2026</p>
@@ -1367,6 +1378,7 @@ Ett exempel att anpassa: ”Vi använder AI för den här avgränsade ändringen
 # Litet scope.<br>Snabb feedback.<br>Mänskligt omdöme.
 
 <p>Behandla AI:n som en kollega.<br>Du kommer bli förvånad över vad den klarar av.</p>
+<p class="case-nav">↓ Demo: från Slack till lösning</p>
 
 Note:
 39:00–40:00 · 1 min · Sänk tempot
@@ -1382,6 +1394,89 @@ Note:
 ”Prova nästa vecka. Berätta vad ni vill åstadkomma, bolla och återkoppla. Visa sedan varandra både det som blev bra och det som blev fel.”
 
 **Vidare:** ”Vad skulle hindra er från att börja?”
+
+
+--
+
+<!-- .slide: class="slack-demo-slide" -->
+<p class="kicker">Från Slack till lösning · 1/3 · valbar demo</p>
+
+# En fråga i Slack.
+
+<div class="slack-request"><a href="assets/images/slack-demo-request-1.png" target="_blank" rel="noopener"><img src="assets/images/slack-demo-request-1.png" alt="Anonymiserad Slack-tråd: fel färg på inaktiva kodfält i ljust läge."></a><a href="assets/images/slack-demo-request-2.png" target="_blank" rel="noopener"><img src="assets/images/slack-demo-request-2.png" alt="Fortsättning före Christians svar: en för lång placeholder och godkännande av den föreslagna texten."></a></div>
+
+Note:
+Valbar demo · cirka 45 sekunder · tas ur frågetiden
+
+”Så här kan en uppgift börja. Någon testar login i Duo och hittar två små saker: färgen på kodfälten och en text som inte får plats.”
+
+- Vänster: observationen och den första skärmbilden.
+- Höger: den föreslagna texten och ett mänskligt copy-godkännande.
+- ”Allt sammanhang finns redan i tråden. Jag behöver inte skriva om det till en lång beställning.”
+
+**↓ Delegeringen:** ”Jag ger AI:n tråden och ber den ta uppgiften hela vägen till en merge request.”
+
+--
+
+<!-- .slide: class="slack-demo-slide" -->
+<p class="kicker">Från Slack till lösning · 2/3</p>
+
+# Jag delegerar jobbet. Och återkopplingen.
+
+<a href="assets/images/slack-demo-delegation.png" target="_blank" rel="noopener"><img class="slack-delegation" src="assets/images/slack-demo-delegation.png" alt="Christian ber AI:n skapa ett Linear-kort från Slack-tråden och lösa uppgiften i en MR, och sedan svara med skärmbilder både i tråden och i MR:n. AI:n rapporterar skapad uppgift, grön CI och publicerad återkoppling."></a>
+
+Note:
+Valbar demo · cirka 45 sekunder
+
+”Först: skapa ett Linear-kort av det här och lös det i en MR. Sedan ber jag den också svara med skärmbilder, både i tråden och i MR:n.”
+
+- ”Jag delegerar alltså både kodändringen och kommunikationen runt den.”
+- Verktyg och åtkomst är redan på plats. AI:n har sammanhanget från tråden och mandat för just den här uppgiften.
+- Tiden i bilden gäller den första körningen, före följdfrågan om skärmbilder. Den är inte en uppmätt totaltid för hela leveransen.
+- ”Lägg märke till sista raden: kontroll på fysisk Duo-enhet återstår.”
+
+**↓ Tillbaka i Slack:** ”Och resultatet kommer tillbaka där frågan ställdes.”
+
+--
+
+<!-- .slide: class="slack-demo-slide" -->
+<p class="kicker">Från Slack till lösning · 3/3</p>
+
+# Resultatet tillbaka i samma tråd.
+
+<div class="slack-result"><a href="assets/images/slack-demo-results.png" target="_blank" rel="noopener"><img src="assets/images/slack-demo-results.png" alt="AI:ns fyra mobilförhandsvisningar i Slack: kodfält och vårdnadshavarflöde, i ljust och mörkt läge."></a><a href="assets/images/slack-demo-reply.png" target="_blank" rel="noopener"><img src="assets/images/slack-demo-reply.png" alt="AI:ns återkoppling i Slack med MR, ärende, ändringarna och testresultaten. Kontroll på fysisk enhet återstår. En kollega svarar att den kan kontrollera i Duo."></a></div>
+
+Note:
+Valbar demo · cirka 45 sekunder
+
+”AI:n lägger tillbaka fyra bilder och en sammanfattning i Slack. Det finns en merge request, ett ärende och en beskrivning av vad som är gjort.”
+
+- Bilderna är lokala mobilförhandsvisningar med testdata, inte bevis på hur det ser ut på en fysisk Duo-enhet.
+- Svaret rapporterar att bygget och 27 riktade komponenttester passerar. Det är vad tråden visar, inte en ny testkörning inför presentationen.
+- ”Kollegan kan direkt ta nästa steg: titta på det i Duo. Vi har fortfarande review och kontroll kvar innan vi betraktar hela leveransen som klar.”
+
+**↓ En annan tråd:** ”Och ibland tar kollega-känslan ett steg till …”
+**→ Frågor:** ”Vad skulle ni vilja delegera på det här sättet?”
+
+--
+
+<!-- .slide: class="slack-demo-slide slack-punchline" -->
+<p class="kicker">Från en annan tråd</p>
+
+# Behandla AI:n som en kollega …
+
+<img src="assets/images/slack-demo-colleague.png" alt="Reaktion från en annan tråd: Toppen! Men Eeeeeh... Har Christians AI precis frågat mig om råd inför en release medan er UX är ledig? 😅">
+
+Note:
+Valbar avslutning · cirka 15 sekunder
+
+”Den här är från en annan tråd.”
+
+Låt publiken läsa. Pausa.
+
+”Det blir ganska bokstavligt ibland.”
+
+**→ Frågor:** ”Vad skulle hindra er från att prova?”
 
 
 ---

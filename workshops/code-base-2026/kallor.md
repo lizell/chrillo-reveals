@@ -76,3 +76,5 @@ Diagrammen är pedagogiska scheman utifrån de redan beskrivna arbetssätten. Lo
 - Underlaget ”Om Athega”: teknikintresset, aktivt ägande, långa kundrelationer och AI-satsningen sedan 2016. Underlag till omarbetad introduktion.
 
 - Christian tillhandahöll 18 september 2026 ett foto av sig själv i sin Code Base-tröja från 2010. Bilden har konverterats från HEIC till JPEG och skalats ned för webben.
+
+- Den 19 september 2026 delade Christian skärmbilder av en Slack-tråd och sin AI-delegering. Dessa används i den valbara slutdemon. Namn, profilbilder, personomnämnanden, en e-postadress och trådens URL har anonymiserats i bildfilerna. Slack-tråden har delats upp; de fyra mobilbilderna har arrangerats i ett rutnät. Meddelandetexten är i övrigt oförändrad. Resultat och testantal återges som uppgifter i tråden; någon ny kontroll av systemet har inte gjorts. Den humoristiska slutbilden kommer uttryckligen från en annan tråd.
