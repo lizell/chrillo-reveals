@@ -60,3 +60,15 @@ Presentation för lördagen den 19 september: **Kom igång med AI i utvecklingsa
 - [Källor och avgränsningar](workshops/code-base-2026/kallor.md).
 
 Kör `npm run dev` och välj `code-base-2026.md`. Efter `npm run build` finns presentationen i `docs/code-base-2026.html` och på den lokala startsidan. Publicering sker separat.
+
+## eXtreme Collaboration · 30 October 2026
+
+[When agents write the code, what do we do together?](slides/xcc-2026.md) — a 10-minute English talk, with ten slides and timed speaker notes. The SVT login story spans three slides, followed by a short colleague reaction from another thread.
+
+Run `npm run dev` and select `xcc-2026.md`, or build and open `docs/xcc-2026.html` through a local HTTP server. Press `S` for speaker notes. Images and diagrams are local. A [PDF backup](docs/xcc-2026.pdf) is included; regenerate it after slide changes.
+
+The English conversation screenshots in `slides/assets/images/xcc-2026/` are AI-assisted translated recreations of the anonymized Code Base assets; the Swedish originals are preserved. The embedded product UI and the results image remain Swedish. Read the translated images as illustrations of the conversation, not pixel-exact evidence of the product. No new test run or production verification of SVT login is implied.
+
+Paris inspiration: Plaud recording **10-28 OpenAI dev day Paris**, 54:02 (verifiable goals), 3:13:59 (making implicit team knowledge available). XCC context: https://xcc.agical.se/om-xc26/ and https://xcc.agical.se/program/.
+
+Slide 4 uses an AI-generated illustrative workshop scene (`workshop-candid.png`): five adults working with cardboard and paper prototypes. It is labelled on the slide and does not depict a real workshop or the SVT team. Earlier sourced photo alternatives are retained in the assets folder.
